@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Spartan',sans-serif;
-    
+    user-select: none;   
 }
 .logo{
     max-width: 100px;
@@ -67,7 +67,7 @@ body{
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 
     padding: 0px 80px;
     background: #fff;
@@ -144,7 +144,7 @@ header {
 
 }
 .hero-img{
-    height: 100vh;
+    height: 75vh;
     position: absolute;
     right: 0;
     transform: scale(-1, 1);    
@@ -283,7 +283,7 @@ header {
 }
 
 #banner h2 span {
-    color: #ef3636;
+    color: red;
 }
 #banner button{
     background-color: #fff;
@@ -307,19 +307,19 @@ button{
 
 #sm-banner {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
 #sm-banner .banner-box {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: flex-start;
     background-image: url(img/banner/b17.jpeg);
     
-    min-width: 580px;
-    height: 50vh;
+    min-width: 300px;
+    height: 25vh;
     background-size: cover;
     background-position: center;
     padding: 30px;
@@ -330,14 +330,19 @@ button{
     background-image: url(img/banner/b19.webp);
 }
 
+#sm-banner .banner-box3{
+    background-image: url(img/banner/b20.webp);
+}
+
+
 #sm-banner h4 {
-    color: #fff;
+    color: var(--black);
     font-size: 20px;
-    font-weight: 300;
+    
 }
 
 #sm-banner h2 {
-    color: var(--onyx);
+    color: var(--white);
     font-size: 20px;
     font-weight: 800;
 }
@@ -369,7 +374,7 @@ button{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url(img/banner/b7.jpeg);
+    background-image: url(img/blog/b6.jpg);
     min-width: 30%;
     height: 30vh;
     background-size: cover;
@@ -393,12 +398,12 @@ button{
 
 #banner3 .banner-box2 {
     
-    background-image: url(img/banner/b4.jpeg);
+    background-image: url(img/blog/b7.jpg);
   
 }
 
 #banner3 .banner-box3 {
-    background-image: url(img/banner/b18.jpeg);
+    background-image: url(img/blog/b3.jpg);
   
 }
 
@@ -461,7 +466,8 @@ button{
 footer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+
+    justify-content: space-around;
     box-shadow: 0 1px 16px  rgba(36, 30, 32, 0.1);
 }
 footer .col {
@@ -498,7 +504,7 @@ footer .follow {
 }
 footer .follow i {
     color:#465b52;
-    padding-right: 4px;
+    font-size: 32px;
     cursor:pointer;
 
 }
@@ -514,7 +520,7 @@ footer .install img {
 
 footer .follow i:hover,
 footer a:hover{
-    color:#088178;
+    color:#041e42;
 }
 
 footer .copyright {
@@ -529,19 +535,23 @@ footer .copyright {
 #page-header{
     background-image: url(img/banner/b1.jpg);
     width: 100%;
-    height: 40vh;
+    height: 30vh;
     background-size: cover;
     display: flex;
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    padding: 14px;
+    padding: 16px;
 
 }
 
+#page-header h2{ 
+    color: var(--raisin-black);
+}
 #page-header h2, 
 #page-header p{ 
-    color: #fff;
+    color: var(--black);
+    font-weight: bold;
 }
 
 #pagination {
@@ -712,20 +722,23 @@ footer .copyright {
 /* About Us */
 
 #page-header.about-header{
-    background-image: url(img/about/banner.png);
+    background-image: url(img/about/banner.jpeg);
+  
 }
 
 #about-head {
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    margin: 80px 0px;
 }
 #about-head div{
-    padding-left: 40px;
-
+  
+    max-width: 750px;
 }
 
 #about-head img {
-    width: 50%;
+    width: 500px;
     height: auto;
 }
 
@@ -734,43 +747,30 @@ footer .copyright {
     text-align: center;
 }
 
-#about-app .video{
-    width: 70%;
-    height: 100%;
-    margin: 30px auto 0 auto;
-}
-
-#about-app .video video{
-    width: 100%;
-    height: 100%;
-    border-radius:20px;
-}
-/*-------------*/
-
 /*Contact*/
 
 #contact-details {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #contact-details .details{
-    width: 40%;
+    
 
 }
 #contact-details .details span, #form-details form span {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 #contact-details .details h2, #form-details form h2 {
-    font-size: 26px;
+    font-size: 32px;
     line-height: 35px;
     padding: 20px 0;
 }
 
 #contact-details .details h3 {
-    font-size: 16px;
+    font-size: 24px;
     padding-bottom: 15px;
 }
 #contact-details .details li {
@@ -779,16 +779,16 @@ footer .copyright {
     padding: 10px 0;
 }
 #contact-details .details li i {
-    font-size: 14px;
+    font-size: 16px;
     padding-right: 22px;
 }
 #contact-details .details li p{
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 #contact-details .map {
-    width: 55%;
+    width: 500px;
     height: 400px;
 }
 
@@ -798,17 +798,21 @@ footer .copyright {
 }
 #form-details {
     display: flex;
-    justify-content: space-between;
-    margin:30px;
-    padding: 80px;
-    border: 1px solid #e1e1e1;
+    justify-content: center;
+    
+    padding: 40px;
+   
+
 }
 
 #form-details form {
-    width: 65%;
+    width: 750px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: flex-start;
+    border: 1px solid #e1e1e1;
+    padding: 80px;
 }
 
 #form-details form input, #form-details form textarea {
