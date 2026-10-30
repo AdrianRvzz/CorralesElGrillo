@@ -1079,3 +1079,13 @@ footer .copyright {
         padding: 30px 20px;
     }
 }
+
+/* Telefono y correo clicables */
+a[href^="tel:"],
+a[href^="mailto:"] {
+    color: inherit;
+    font-size: inherit;
+    margin: 0;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
