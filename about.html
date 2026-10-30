@@ -7,7 +7,8 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-    <title>Corrales El Grillo</title>
+    <title>Acerca de | Corrales El Grillo</title>
+    <meta name="description" content="Conoce Corrales El Grillo: compra y venta de ganado para exportación en la región de Chihuahua desde 2018.">
 
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
@@ -22,24 +23,20 @@
 
     <header id="header">
 
-        <a href="#"><img src="img/logo.jpg" alt="" class="logo"></a>
+        <a href="index.html"><img src="img/logo.jpg" alt="Corrales El Grillo" class="logo"></a>
 
         <div>
 
             <ul id="navbar">
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html" class="active">Acerca de</a></li>
                 <li><a href="contact.html">Contacto</a></li>
-                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+                <li class="close-item"><a href="#" id="close" aria-label="Cerrar menú"><i class="fas fa-times"></i></a></li>
             </ul>
 
         </div>
         <div id="mobile">
-            <a href="cart.html"><i class="fa-solid fa-basket-shopping"></i></a>
-            <i id="bar" class="fas fa-outdent"></i>
-
-
+            <button id="bar" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
         </div>
 
     </header>
@@ -47,31 +44,69 @@
 
     <section id="page-header" class="about-header">
 
-        <h2>#ElGrillo</h2>
+        <h2>Quiénes somos</h2>
 
-        <p>Nuestra historia empieza desde 1970 </p>
+        <p>Compra y venta de ganado en Chihuahua desde 2018</p>
 
 
     </section>
     <section id="about-head" class="section-p1">
-        <img src="img/about/a6.jpg" alt="">
-        <div>
-            <h2>Conócenos más</h2>
-            <p>En Corrales El Grillo, nos especializamos en la compra y venta de ganado, ofreciendo precios justos y
-                competitivos en la región. Nos dedicamos a proporcionar un servicio de calidad y confianza, ayudando a
-                los productores a obtener el mejor valor por su ganado, ya sea vacas o toros.</p>
-            <abbr title="Trabajamos con los mejores estándares en el sector ganadero">Nos enorgullece brindar un
-                servicio transparente y honesto, con un enfoque en el bienestar animal y las mejores prácticas en el
-                mercado.</abbr>
-
-            <br><br>
-
-            <marquee bgcolor="#ccc" loop="-1" scrollamount="5" width="100%">
-                Con **Corrales El Grillo**, obtienes un trato justo y el mejor precio para tu ganado. ¡Contáctanos y
-                aprovecha nuestras ofertas!
-            </marquee>
+        <img src="img/about/a6.jpg" alt="Corrales de ganado en Corrales El Grillo">
+        <div class="about-text">
+            <span>QUIÉNES SOMOS</span>
+            <h2>Compramos becerros en el noroeste de Chihuahua</h2>
+            <p>Somos un negocio familiar de Nuevo Casas Grandes. Compramos becerros para engorda directamente al
+                productor y los embarcamos a exportación por Santa Teresa.</p>
+            <ul class="about-facts">
+                <li><strong>2018</strong><span>Año en que empezamos</span></li>
+                <li><strong>Por kilo</strong><span>Con referencia a la Subasta de Chihuahua</span></li>
+                <li><strong>Santa Teresa</strong><span>Cruce de exportación</span></li>
+            </ul>
         </div>
+    </section>
 
+    <section id="historia" class="section-p1">
+        <span>NUESTRA HISTORIA</span>
+        <h2>Cómo llegamos hasta aquí</h2>
+
+        <img src="img/about/our_history.jpg" alt="La familia de Corrales El Grillo en el río" class="story-img">
+
+        <div class="story">
+            <div class="story-step">
+                <h3>2018 · Empezamos con unos cuantos becerros</h3>
+                <p>El fundador todavía estaba en la preparatoria cuando empezó a comprar becerros, engordarlos y
+                    revenderlos. Funcionó, y lo que era un ingreso extra se convirtió en Corrales El Grillo.</p>
+            </div>
+            <div class="story-step">
+                <h3>Pandemia y sequías · Crecimos cuando más se necesitaba</h3>
+                <p>Muchos productores de la región tuvieron que vender y buscaban un comprador cercano y de palabra.
+                    En esos años la inseguridad también nos obligó a dejar el rancho familiar, así que nos enfocamos
+                    de lleno en la compra y venta.</p>
+            </div>
+            <div class="story-step">
+                <h3>Hoy · Del corral a la exportación</h3>
+                <p>Compramos en todo el noroeste de Chihuahua y embarcamos por Santa Teresa. Seguimos siendo la misma
+                    familia, y seguimos tratando a cada ganadero como nos gusta que nos traten.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="valores">
+        <div class="value">
+            <i class="fas fa-handshake"></i>
+            <h3>Confianza</h3>
+            <p>Cumplimos lo que acordamos, desde el pesaje hasta el pago.</p>
+        </div>
+        <div class="value">
+            <i class="fas fa-user-friends"></i>
+            <h3>Trato humano</h3>
+            <p>Te atendemos directo y con respeto, como nos gusta que nos traten.</p>
+        </div>
+        <div class="value">
+            <i class="fas fa-home"></i>
+            <h3>Negocio familiar</h3>
+            <p>Detrás de cada compra hay una familia que da la cara.</p>
+        </div>
     </section>
 
 
@@ -88,7 +123,8 @@
             <div class="follow">
                 <h4>Síguenos</h4>
                 <div class="icon">
-                    <a href="https://www.facebook.com/efren.charbray"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/efren.charbray" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/corraleselgrillo/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
 
 
                 </div>
@@ -97,11 +133,11 @@
 
         <div class="col">
             <h4>Sobre Nosotros</h4>
-            <a href="#">Quiénes Somos</a>
-            <a href="#">Servicios</a>
-            <a href="#">Política de Privacidad</a>
-            <a href="#">Términos y Condiciones</a>
-            <a href="#">Contáctanos</a>
+            <a href="about.html">Quiénes Somos</a>
+            <a href="index.html#servicios">Servicios</a>
+            <a href="privacidad.html">Aviso de Privacidad</a>
+            <a href="terminos.html">Términos y Condiciones</a>
+            <a href="contact.html">Contáctanos</a>
         </div>
 
         <div class="copyright">

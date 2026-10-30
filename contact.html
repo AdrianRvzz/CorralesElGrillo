@@ -5,7 +5,8 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>Corrales El Grillo</title>
+    <title>Contacto | Corrales El Grillo</title>
+    <meta name="description" content="Contáctanos por WhatsApp para vender o comprar ganado en Nuevo Casas Grandes, Chihuahua.">
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
     <script src="https://kit.fontawesome.com/4400e17e4c.js" crossorigin="anonymous"></script>
@@ -13,24 +14,22 @@
 
 <body>
     <header id="header">
-        <a href="#"><img src="img/logo.jpg" alt="" class="logo"></a>
+        <a href="index.html"><img src="img/logo.jpg" alt="Corrales El Grillo" class="logo"></a>
         <div>
             <ul id="navbar">
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">Acerca de</a></li>
                 <li><a href="contact.html" class="active">Contacto</a></li>
-                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+                <li class="close-item"><a href="#" id="close" aria-label="Cerrar menú"><i class="fas fa-times"></i></a></li>
             </ul>
         </div>
         <div id="mobile">
-            <a href="cart.html"><i class="fa-solid fa-basket-shopping"></i></a>
-            <i id="bar" class="fas fa-outdent"></i>
+            <button id="bar" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
         </div>
     </header>
 
     <section id="page-header" class="about-header">
-        <h2>#VamosAHablar</h2>
+        <h2>Contacto</h2>
         <p>¡Déjanos un mensaje! Nos encanta escuchar de ti.</p>
     </section>
 
@@ -56,6 +55,10 @@
                     <i class="fa-solid fa-clock"></i>
                     <p>Lunes a Sábado: 9:00 am - 6:00 pm</p>
                 </li>
+                <li>
+                    <i class="fab fa-whatsapp"></i>
+                    <p>Fuera de temporada la respuesta puede tardar un poco más, pero siempre te contestamos.</p>
+                </li>
             </div>
         </div>
         <div class="map">
@@ -67,14 +70,14 @@
     </section>
 
     <section id="form-details">
-        <form action="">
-            <span>DEJA UN MENSAJE</span>
-            <h2>Nos encanta escuchar de ti</h2>
-            <input type="text" placeholder="Tu Nombre">
-            <input type="text" placeholder="Correo Electrónico">
-            <input type="text" placeholder="Asunto">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje"></textarea>
-            <button class="normal">Enviar</button>
+        <form id="whatsapp-form">
+            <span>ESCRÍBENOS POR WHATSAPP</span>
+            <h2>Cuéntanos qué ganado quieres vender o comprar</h2>
+            <input type="text" id="name" placeholder="Tu nombre" required>
+            <input type="email" id="email" placeholder="Correo electrónico (opcional)">
+            <input type="text" id="subject" placeholder="Asunto (ej. Venta de 20 becerros)">
+            <textarea id="message" cols="30" rows="8" placeholder="Tu mensaje: cantidad, raza, peso aproximado, ubicación..." required></textarea>
+            <button type="submit" class="normal"><i class="fab fa-whatsapp"></i> Enviar por WhatsApp</button>
         </form>
     </section>
 
@@ -90,7 +93,8 @@
             <div class="follow">
                 <h4>Síguenos</h4>
                 <div class="icon">
-                    <a href="https://www.facebook.com/efren.charbray"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/efren.charbray" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/corraleselgrillo/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
 
 
                 </div>
@@ -99,11 +103,11 @@
 
         <div class="col">
             <h4>Sobre Nosotros</h4>
-            <a href="#">Quiénes Somos</a>
-            <a href="#">Servicios</a>
-            <a href="#">Política de Privacidad</a>
-            <a href="#">Términos y Condiciones</a>
-            <a href="#">Contáctanos</a>
+            <a href="about.html">Quiénes Somos</a>
+            <a href="index.html#servicios">Servicios</a>
+            <a href="privacidad.html">Aviso de Privacidad</a>
+            <a href="terminos.html">Términos y Condiciones</a>
+            <a href="contact.html">Contáctanos</a>
         </div>
 
         <div class="copyright">
